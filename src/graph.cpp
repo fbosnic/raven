@@ -811,6 +811,9 @@ void Graph::Assemble() {
                 << std::endl;
     }
   }
+  CreateUnitigs(1);
+  PrintGfa("graph.gfa");
+  PrintCsv("graph.csv");
 
   if (stage_ == -2) {  // remove tips and bubbles
     timer.Start();
