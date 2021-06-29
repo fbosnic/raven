@@ -828,6 +828,10 @@ void Graph::Assemble() {
               << std::endl;
   }
 
+  CreateUnitigs(1);
+  PrintGfa("graph.gfa");
+  PrintCsv("graph.csv");
+
   if (stage_ == -2) {  // checkpoint
     ++stage_;
     if (checkpoints_) {
