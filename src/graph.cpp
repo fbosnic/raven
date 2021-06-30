@@ -828,7 +828,7 @@ void Graph::Assemble() {
               << std::endl;
   }
 
-  CreateUnitigs(1);
+  CreateUnitigs(0);
   PrintGfa("graph.gfa");
   PrintCsv("graph.csv");
 
